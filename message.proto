@@ -1,0 +1,23 @@
+syntax = "proto2"
+package paxoslease;
+
+message PrepareRequest {
+    required int32 node_id = 1;
+    required int32 ballot_number = 2;
+}
+
+message PrepareResponse {
+    required int32 node_id = 1;
+    required int32 ballot_number = 2;
+    required bool lease_empty = 3;
+} 
+
+message ProposeRequest {
+    required int32 node_id = 1;
+    required int32 ballot_number = 2;
+}
+
+message ProposeResponse {
+    required int32 node_id = 1;
+    required int32 ballot_number = 2;
+}
